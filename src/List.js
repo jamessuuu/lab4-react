@@ -1,7 +1,7 @@
 import React from "react";
 import { FaTrash, FaCheck } from "react-icons/fa";
 
-function List({ items, onCheck, onTrash }) {
+function List({ items, onDeleteItem, onCheckItem }) {
   return (
     <div className="list-container">
       <ul className="list">
@@ -10,10 +10,16 @@ function List({ items, onCheck, onTrash }) {
             <span className="task-name">{item.name}</span>
             <span className="task-date">{item.date}</span>
             <span className="actions">
-              <button onClick={() => onCheck(item.id)} className="icon-button">
+              <button
+                onClick={() => onCheckItem(item.id)} // Changed handleDeleteItem to onDeleteItem
+                className="icon-button"
+              >
                 <FaCheck className="white-icon" />
               </button>
-              <button onClick={() => onTrash(item.id)} className="icon-button">
+              <button
+                onClick={() => onDeleteItem(item.id)} // Changed handleDeleteItem to onDeleteItem
+                className="icon-button"
+              >
                 <FaTrash className="white-icon" />
               </button>
             </span>
