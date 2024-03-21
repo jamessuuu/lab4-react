@@ -3,6 +3,7 @@ import "./App.css";
 import Header from "./Header";
 import Form from "./Form";
 import { useState } from "react";
+import Footer from "./Footer";
 
 function App() {
   const [items, setItems] = useState([]);
@@ -11,11 +12,6 @@ function App() {
     setItems((items) => [...items, item]);
     console.log(items);
   }
-
-  // function handleDeleteItem(id) {
-  //   setItems((items) => items.filter((item) => item.id !== id));
-  // }
-  // handleDeleteItem dapat nasa Form.js na kasi yun yung parent ng List component
 
   return (
     <div className="App">

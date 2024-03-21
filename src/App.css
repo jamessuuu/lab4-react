@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap");
-*{
+* {
   background-color: #282c34;
 }
 
@@ -11,9 +11,8 @@
   max-width: 100vw; /* Restrict to the width of the viewport */
   overflow-x: hidden; /* Hide horizontal overflow */
   margin: 0 auto; /* Center horizontally */
-  max-height:1600px;
+  max-height: 1600px;
 }
-
 
 .App-logo {
   height: 40vmin;
@@ -69,7 +68,7 @@
   border-radius: 10px;
   border: 1px solid rgb(110, 110, 110);
   width: 700px;
-  height: 600px;
+  height: 700px;
   display: flex;
   align-items: flex-start;
   padding: 20px;
@@ -99,10 +98,6 @@
   margin: 0;
 }
 
-.task {
-  /* Your task styles here */
-}
-
 .list ul {
   list-style-type: none;
   padding: 0;
@@ -115,6 +110,18 @@
   justify-content: space-between; /* Align children with space between */
   border-radius: 5px;
   border: 2px solid white;
+  width: 660px;
+  padding: 10px; /* Add padding for spacing */
+  margin: 10px;
+}
+
+.task-done {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between; /* Align children with space between */
+  border-radius: 5px;
+  border: 2px solid #02ae02;
   width: 660px;
   padding: 10px; /* Add padding for spacing */
   margin: 10px;
@@ -155,7 +162,6 @@
   padding: 5px;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
-
 }
 
 .btn-done {
@@ -204,7 +210,7 @@
   color: white;
 }
 
-.icon{
+.icon {
   background-color: transparent;
 }
 
@@ -212,8 +218,39 @@
   color: white;
 }
 
+.green-icon {
+  color: #02ae02;
+}
+
 .icon-button {
   background: none;
   border: none;
   cursor: pointer;
+}
+
+.footer-container {
+  text-align: center;
+}
+
+.button-container {
+  margin-left: 40px;
+  margin-top: 5px;
+  text-align: center; /* Align the button container to the center */
+}
+
+.clear-button {
+  color: white;
+  background-color: #282c34;
+  border-radius: 7px;
+  border: 1px solid white;
+  font-size: 18px;
+  padding: 6px 15px;
+  font-family: "Montserrat", sans-serif;
+  margin-top: 10px; /* Add some top margin */
+  display: inline-block; /* Make the button inline-block to be centered */
+}
+
+.footerText {
+  margin-left: 40px;
+  margin-bottom: -5px;
 }
